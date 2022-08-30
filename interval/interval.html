@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interval</title>
+</head>
+<body>
+    <button class="start_interval">
+        Start Interval
+    </button>
+    <div class="second">
+
+    </div>
+    
+    <script>
+        var s=0;
+        var counter;
+        var start_interval = document.querySelector('.start_interval');
+        var second = document.querySelector('.second');
+
+        start_interval.addEventListener('click', function(){
+            if(!counter){
+                counter = setInterval(run_second, 1000);
+
+            }
+            
+            function run_second(){
+                second.textContent = s + 1, s++;
+
+            }
+        })
+    </script>
+</body>
+</html>

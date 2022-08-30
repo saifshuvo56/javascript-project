@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cls">
+        I am a querySeletor for Class
+    </div>
+
+    <div id="id_query">
+        I am a querySeletor for ID
+    </div>
+
+    <div id="id">
+        The getElementById
+    </div>
+
+    <script>
+       /* document.querySelector(".cls").textContent ="I am a querySeletor for Class works"
+        document.querySelector("#id_query").textContent="I am a querySeletor for ID works"
+        document.getElementById("id_query").textContent="I am a getelement for ID works"
+        document.getElementById("id").textContent ="saiful is my name" */
+
+        var class_var = document.querySelector(".cls");
+        class_var.textContent = ("variable class is working")
+
+        var id_query = document.querySelector('#id_query');
+        id_query.textContent = ("variable id_query is working")
+
+        var id_var = document.getElementById("id");
+        id_var.textContent =('Shuvo')
+    </script>
+</body>
+</html>

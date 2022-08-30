@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="cls_btn">
+        Change Hello text
+    </button>
+    <div class="cls_text">
+        HELLO
+    </div>
+
+    <script>
+        var button = document.querySelector('.cls_btn')
+        var text = document.querySelector('.cls_text')
+        button.addEventListener('click',function(){
+            text.textContent = try_return();
+            function try_return(){
+            return "testing return is done"
+            }
+        })
+        
+    </script>
+
+</body>
+</html>
